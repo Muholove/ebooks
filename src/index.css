@@ -11,7 +11,24 @@ main { padding: 1.5rem 0 3rem; }
 .navbar { position: sticky; top: 0; z-index: 10; backdrop-filter: blur(6px); background: rgba(14,15,18,0.6); border-bottom: 1px solid #1f2330; }
 .nav-inner { display:flex; align-items:center; justify-content:space-between; height:64px; }
 .brand { font-weight: 700; color: var(--text); }
-.navbar nav { display:flex; gap:1rem; }
+.navbar nav { display:flex; gap:1rem; align-items: center; }
+.nav-links { display:flex; gap:1rem; align-items:center; }
+.nav-cta-text {
+  font-size: .85rem;
+  color: var(--muted);
+}
+.telegram-link {
+  padding: .4rem .8rem;
+  border-radius:999px;
+  background: #229ED9;
+  color: #0b0c10;
+  font-weight:600;
+  font-size:.85rem;
+}
+.telegram-link:hover {
+  text-decoration:none;
+  filter:brightness(1.1);
+}
 .grid { display:grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1rem; }
 .ebook-card { background: var(--panel); border:1px solid #1f2330; border-radius: 12px; overflow:hidden; display:flex; flex-direction:column; }
 .ebook-card .cover-wrap { display:block; aspect-ratio: 3/4; background:#0f1117; }
