@@ -3,6 +3,6 @@ services:
     name: ebook-store
     env: node
     buildCommand: npm install && npm run build
-    startCommand: npm start
+    startCommand: node server.js
     plan: free
     region: oregon
