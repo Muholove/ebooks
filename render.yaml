@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: ebook-store
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    plan: free
+    region: oregon
